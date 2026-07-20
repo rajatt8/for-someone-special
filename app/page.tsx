@@ -1,65 +1,125 @@
-import Image from "next/image";
+"use client";
+
+import { AnimatePresence, motion } from "framer-motion";
+import { useState } from "react";
+
+import Hero from "@/components/Hero";
+import Intro from "@/components/Intro";
+import Letter from "@/components/letter";
+import Gallery from "@/components/gallery";
+import OurLittleUniverse from "@/components/ourlittleuniverse";
+import MakeAWish from "@/components/makeawish";
+import Ending from "@/components/ending";
 
 export default function Home() {
+  const [screen, setScreen] = useState(0);
+
+  const goToNextScreen = () => {
+    setScreen((current) => current + 1);
+  };
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <main className="min-h-screen w-full overflow-hidden bg-[#050505]">
+      <AnimatePresence mode="wait">
+
+        {/* HERO */}
+        {screen === 0 && (
+          <motion.div
+            key="hero"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.6 }}
+            className="min-h-screen w-full"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            <Hero onFinished={goToNextScreen} />
+          </motion.div>
+        )}
+
+        {/* INTRO */}
+        {screen === 1 && (
+          <motion.div
+            key="intro"
+            initial={{ opacity: 0, x: 30 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -30 }}
+            transition={{ duration: 0.6 }}
+            className="min-h-screen w-full"
           >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+            <Intro onFinished={goToNextScreen} />
+          </motion.div>
+        )}
+
+        {/* LETTER */}
+        {screen === 2 && (
+          <motion.div
+            key="letter"
+            initial={{ opacity: 0, x: 30 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -30 }}
+            transition={{ duration: 0.6 }}
+            className="min-h-screen w-full"
+          >
+            <Letter onFinished={goToNextScreen} />
+          </motion.div>
+        )}
+
+        {/* GALLERY */}
+        {screen === 3 && (
+          <motion.div
+            key="gallery"
+            initial={{ opacity: 0, x: 30 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -30 }}
+            transition={{ duration: 0.6 }}
+            className="min-h-screen w-full"
+          >
+            <Gallery onFinished={goToNextScreen} />
+          </motion.div>
+        )}
+
+        {/* OUR LITTLE UNIVERSE */}
+        {screen === 4 && (
+          <motion.div
+            key="universe"
+            initial={{ opacity: 0, scale: 1.02 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.98 }}
+            transition={{ duration: 0.8 }}
+            className="min-h-screen w-full"
+          >
+            <OurLittleUniverse onFinished={goToNextScreen} />
+          </motion.div>
+        )}
+
+        {/* MAKE A WISH */}
+        {screen === 5 && (
+          <motion.div
+            key="wish"
+            initial={{ opacity: 0, scale: 1.02 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.8 }}
+            className="min-h-screen w-full"
+          >
+            <MakeAWish onFinished={goToNextScreen} />
+          </motion.div>
+        )}
+
+        {/* FINAL ENDING */}
+        {screen === 6 && (
+          <motion.div
+            key="ending"
+            initial={{ opacity: 0, scale: 1.02 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1 }}
+            className="min-h-screen w-full"
+          >
+            <Ending />
+          </motion.div>
+        )}
+
+      </AnimatePresence>
+    </main>
   );
 }
