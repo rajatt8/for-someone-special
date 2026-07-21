@@ -252,7 +252,7 @@ export default function MakeAWish({
                   fontFamily: "var(--font-cormorant)",
                 }}
               >
-                I hope my Pyaari Sii Bachii always stays Happy!
+                I hope we get to create many, many more memories like this together!
               </motion.h2>
 
               <motion.p
@@ -269,7 +269,7 @@ export default function MakeAWish({
               >
                 Today, tomorrow,
                 <br />
-                and every day after this. 💗🧿
+                and every day. 💗🧿
               </motion.p>
 
               <motion.button

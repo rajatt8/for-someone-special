@@ -124,10 +124,10 @@ No matter where life takes us in the future, you'll always find me by your side.
 
  I hope you always remember how strong, beautiful, and capable you are and how much your Rajat loves you.
 
-And i hope if you ever visit this website again,You'll smile, shake your head, and remember that someone once sat for hours creating every single page just because your birthday mattered that much.
+And i hope if you ever visit this website again,You'll smile, shake your head, and remember that some idiot once sat for hours creating every single page just because your birthday mattered that much.
 
           <br />
-          Happy Birthday Meraa Chauu Mauu!
+          Happy Birthday Again Meraa Chauu Mauu!
         </motion.p>
 
 
@@ -147,7 +147,7 @@ And i hope if you ever visit this website again,You'll smile, shake your head, a
         >
           Thank you for being the most beautiful part of my life
           <br />
-          With all my heart,
+          Enjoyy yourr dayy Darlinggg!
         </motion.p>
 
 

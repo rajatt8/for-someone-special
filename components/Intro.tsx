@@ -118,9 +118,9 @@ export default function Intro({
             fontFamily: "var(--font-cormorant)",
           }}
         >
-          I've made something for
+          I've made something only for YOU!
           <br />
-          YOU
+          
         </motion.h1>
 
         <motion.p

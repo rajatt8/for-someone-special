@@ -76,7 +76,7 @@ export default function OurLittleUniverse({
           className="mx-auto max-w-[600px] text-center"
         >
           <p className="text-[10px] uppercase tracking-[0.5em] text-pink-200/40 sm:text-xs">
-            Our Little Universe
+            Our Little Universe ♡
           </p>
 
           <h1
@@ -102,7 +102,7 @@ export default function OurLittleUniverse({
               fontFamily: "var(--font-cormorant)",
             }}
           >
-            I'm glad I found you.
+            I'm glad I found *YOU*.
           </motion.p>
 
           <motion.div
@@ -220,7 +220,7 @@ export default function OurLittleUniverse({
           >
             of all the beautiful moments
             <br />
-            I hope life gives you.
+            🧿
           </p>
 
           <motion.button
