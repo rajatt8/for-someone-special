@@ -75,7 +75,7 @@ With all my heart,
       caption: "My Favourite smile. ❤️",
     },
     {
-      image: "/photos/6.jpg",
+      image: "/photos/66.jpg",
       caption: "My Gadhi being Gadhi. 💗",
     },
     {
@@ -128,35 +128,35 @@ With all my heart,
     },
     {
       image: "/photos/19.jpg",
-      caption: "Effortlesly Beautifull 💗🧿 ",
+      caption: "Effortlesly Beautiful 💗🧿 ",
     },
     {
       image: "/photos/20.jpg",
-      caption: "Effortlesly Beautifull 💗🧿",
+      caption: "Effortlesly Beautiful 💗🧿",
     },
     {
       image: "/photos/21.jpg",
-      caption: "Effortlesly Beautifull 💗🧿",
+      caption: "Effortlesly Beautiful 💗🧿",
     },
     {
       image: "/photos/22.jpg",
-      caption: "Effortlesly Beautifull 💗🧿",
+      caption: "Effortlesly Beautiful 💗🧿",
     },
     {
       image: "/photos/23.jpg",
-      caption: "Effortlesly Beautifull 💗🧿",
+      caption: "Effortlesly Beautiful 💗🧿",
     },
     {
       image: "/photos/24.jpg",
-      caption: "Effortlesly Beautifull 💗🧿",
+      caption: "Effortlesly Beautiful 💗🧿",
     },
     {
       image: "/photos/25.jpg",
-      caption: "Effortlesly Beautifull 💗🧿",
+      caption: "Effortlesly Beautiful 💗🧿",
     },
     {
       image: "/photos/26.jpg",
-      caption: "Effortlesly Beautifull 💗🧿",
+      caption: "Effortlesly Beautiful 💗🧿",
     }
   ],
 
@@ -328,6 +328,41 @@ With all my heart,
     },
     {
       image: "/photos/her/34.jpg",
+      caption: "Another memory I want to keep.",
+      size: "tall",
+    },
+    {
+      image: "/photos/her/35.jpg",
+      caption: "Another memory I want to keep.",
+      size: "tall",
+    },
+    {
+      image: "/photos/her/36.jpg",
+      caption: "Another memory I want to keep.",
+      size: "tall",
+    },
+    {
+      image: "/photos/her/37.jpg",
+      caption: "Another memory I want to keep.",
+      size: "tall",
+    },
+    {
+      image: "/photos/her/38.jpg",
+      caption: "Another memory I want to keep.",
+      size: "tall",
+    },
+    {
+      image: "/photos/her/39.jpg",
+      caption: "Another memory I want to keep.",
+      size: "tall",
+    },
+    {
+      image: "/photos/her/40.jpg",
+      caption: "Another memory I want to keep.",
+      size: "tall",
+    },
+    {
+      image: "/photos/her/41.jpg",
       caption: "Another memory I want to keep.",
       size: "tall",
     }
