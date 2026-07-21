@@ -325,6 +325,11 @@ With all my heart,
       image: "/photos/her/33.jpg",
       caption: "Another memory I want to keep.",
       size: "tall",
+    },
+    {
+      image: "/photos/her/34.jpg",
+      caption: "Another memory I want to keep.",
+      size: "tall",
     }
   ],
 };
