@@ -366,7 +366,7 @@ Pure saal ptaa nhi ham kitnni baar lade ek doosre se...kitni baar ek doosre se n
     },
     {
       image: "/photos/her/51.jpg",
-      caption: "47.",
+      caption: "Prettyy✨🧿",
       size: "tall",
     },
     {
